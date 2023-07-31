@@ -6,15 +6,21 @@
     <title>Tally Counter</title>
 
     <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>
+    <header class="header">
+        <h1 class="header__title">
             Tally Count
         </h1>
     </header>
 
-    <div>
+    <!-- <aside class="controls">
         <label>
             <span>Display</span>
             <select>
@@ -31,11 +37,19 @@
                 <option>Counter 3</option>
             </select>
         </label>
-
         <button>Settings</button>
-    </div>
-    
-    <div></div>
-    <footer></footer>
-</body>
+    </aside> -->
+
+    <main class="counter">
+            <input class="counter__value" readonly value="0">
+            <div class="counter__actions">
+                <button class="counter__button
+                counter__button_first">-</button>
+                <button class="counter__button">+</button>
+            </div>
+        </main>
+        <footer class="footer">
+            Inspired by <a class="footer__link" href="https://tallycount.app/">Tally COunt</a>. Note that this is merely a practice project for learning JavaScript.
+        </footer>
+    </body>
 </html>
