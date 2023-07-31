@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+
+    <script src="/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -41,15 +43,20 @@
     </aside> -->
 
     <main class="counter">
-            <input class="counter__value" readonly value="0">
+            <input class="counter__value" data-key="number" readonly value="0"/>
             <div class="counter__actions">
-                <button class="counter__button
+                <button data-key="subtract" class="counter__button
                 counter__button_first">-</button>
-                <button class="counter__button">+</button>
+                <button data-key="add" class="counter__button">+</button>
             </div>
         </main>
+        
         <footer class="footer">
-            Inspired by <a class="footer__link" href="https://tallycount.app/">Tally COunt</a>. Note that this is merely a practice project for learning JavaScript.
+            Inspired by 
+            <a class="footer__link" href="https://tallycount.app/">
+            Tally COunt</a>. 
+            Note that this is merely a practice 
+            project for learning JavaScript.
         </footer>
     </body>
 </html>
