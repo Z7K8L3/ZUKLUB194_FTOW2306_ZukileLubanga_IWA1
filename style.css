@@ -4,6 +4,8 @@
     --color-black: rgb(0, 0, 0);
     --color-dark-grey: rgb(44, 44, 44);
     --color-light-grey: rgb(128, 128, 128);
+    --color-dark-red: rgb(169, 68, 66);
+    --color-light-red: rgb(242, 222, 222);
 }
 
 * {
@@ -100,4 +102,12 @@ body {
 
 .footer__link {
     color: var(--color-white);
+}
+
+/* error */
+
+.error {
+    padding: 2rem;
+    background: var(--color-light-red);
+    color: var(--color-dark-red);
 }
